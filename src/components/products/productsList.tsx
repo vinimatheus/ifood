@@ -1,23 +1,19 @@
-import db from '@/utils/prisma'
 import ProductItem from './productItem'
+import { Prisma } from '@prisma/client'
 
-export default async function ProductsList() {
-  const products = await db.product.findMany({
-    where: {
-      discountPercentage: {
-        gt: 0,
-      },
-    },
-    take: 10,
+interface ProductItemProps {
+  products: Prisma.ProductGetPayload<{
     include: {
       restaurant: {
         select: {
-          name: true,
-        },
-      },
-    },
-  })
+          name: true
+        }
+      }
+    }
+  }>[]
+}
 
+export default async function ProductsList({ products }: ProductItemProps) {
   return (
     <div className="flex gap-4 overflow-x-auto py-1 pl-5 [&::-webkit-scrollbar]:hidden">
       {products.map((product) => (
