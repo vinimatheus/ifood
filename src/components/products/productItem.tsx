@@ -26,7 +26,7 @@ export default function ProductItem({ product }: ProductItemProps) {
           className="rounded-lg object-cover shadow-md"
         />
         {product.discountPercentage && (
-          <div className="p absolute left-1 top-1 rounded-full bg-red-500 px-2 py-[2px] text-xs text-white shadow">
+          <div className="absolute left-1 top-1 rounded-full bg-red-500 px-2 py-[2px] text-xs text-white shadow">
             <span className="flex items-center gap-1">
               <ArrowDown size={16} />
               {product.discountPercentage}%
