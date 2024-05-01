@@ -25,7 +25,7 @@ export default function RestaurantItem({ restaurant }: RestaurantItemProps) {
           fill
           className="rounded-lg object-cover shadow-md"
         />
-        <div className="absolute left-1 top-1 rounded-full bg-white px-2 py-[2px] text-xs text-black text-white shadow">
+        <div className="absolute left-1 top-1 rounded-full bg-white px-2 py-[2px] text-xs  text-white shadow">
           <span className="flex items-center gap-1">
             <Star color="#F59E0B" size={16} />
             5.0
