@@ -22,6 +22,7 @@ export default async function Page({ params: { id } }: ProductDetailProps) {
       category: {
         name: 'Sucos',
       },
+      restaurantId: products?.restaurantId,
     },
     take: 14,
     include: {

@@ -46,7 +46,7 @@ export default function ProductDetail({
           </Button>
         </Link>
       </div>
-      <div className="flex flex-col p-5">
+      <div className="relative mt-[-40px] flex flex-col rounded-3xl bg-white p-5">
         <div className="flex items-center gap-2">
           <Image
             src={products.restaurant.imageUrl}
