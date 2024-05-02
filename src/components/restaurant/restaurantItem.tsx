@@ -26,12 +26,12 @@ export default function RestaurantItem({ restaurant }: RestaurantItemProps) {
           className="rounded-lg object-cover shadow-md"
         />
         <div className="absolute left-1 top-1 rounded-full bg-white px-2 py-[2px] text-xs  text-white shadow">
-          <span className="flex items-center gap-1">
+          <span className="flex items-center gap-1 text-black">
             <Star color="#F59E0B" size={16} />
             5.0
           </span>
         </div>
-        <div className="text-xsx absolute right-1 top-1 rounded-full bg-black/50 px-2 py-[2px] shadow">
+        <div className="text-xsx absolute right-1 top-1 rounded-full bg-black/50 p-1 shadow">
           <Button size="icon" variant="ghost">
             <Heart color="#fff" size={16} />
           </Button>
